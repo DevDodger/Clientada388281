@@ -24,5 +24,6 @@ It uses a key (password, basically) safety system, that can be tailored to your 
 ## FAQ
 Will this be compatible with DataStore2?  
 > No, and I do not plan on implementing a system to do so. However, anyone is free to make a pull request adding compatibility.   
+      
 How does the key system work?
-> A master key is set in a config module script. That key is required for all functions in Clientada. You can change the key, and if you don't care about your game's datastores being exploited, you can completely disable the key system (don't do this lol)   
+> A master key is set in a config module script. That key is a required argument for all functions in Clientada. You have the ability to change the key, and if the client issues a request and the key is not specified or is incorrect, then kick the player.
