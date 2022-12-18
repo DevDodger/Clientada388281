@@ -1,6 +1,7 @@
 # Clientada   
 <img src='clientadalogo.png'>   
 
+
 ## What the hell does it do?
 Ever struggled with local scripts needing DataStore data, and you have to make a server script, set up a remote function, and do so much?   
 Clientada solves this, Roblox's first client-side DataStore system.  
@@ -21,9 +22,14 @@ It uses a key (password, basically) safety system, that can be tailored to your 
 - Easily configurable to meet your needs
 - _Nearly_ 100% exploiter proof
 
+## Note
+This is still in beta, and some things may not be implemented or be glitchy.   
+**DO NOT USE THIS IN A PRODUCTION DEPLOYMENT, UNLESS YOU ARE WILLING TO ACCEPT THE GLITCH TO VULNERABILITIES AND OR POSSIBLE GLITCHES**
+
 ## FAQ
 Will this be compatible with DataStore2?  
 > No, and I do not plan on implementing a system to do so. However, anyone is free to make a pull request adding compatibility.   
       
 How does the key system work?
 > A master key is set in a config module script. That key is a required argument for all functions in Clientada. You have the ability to change the key, and if the client issues a request and the key is not specified or is incorrect, then kick the player.
+
